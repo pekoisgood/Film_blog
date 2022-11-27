@@ -1,0 +1,124 @@
+/* nav */
+#navbrand{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+#navbrand:hover{
+    transform: rotateZ(360deg);
+    transition: 1s;
+    text-shadow: 0.05em 0.05em 0 rgb(192, 191, 191);
+    color: antiquewhite;
+}
+
+#nav-list li a:hover{
+    text-shadow: 0.1em 0.1em 0 gainsboro;
+}
+
+/* main */
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.input-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main p, main li{
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: square;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.container{
+    margin-top: 20px;
+}
+.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px rgb(245, 245, 232);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:nth-child(1) .drescription{
+    height: 100%;
+}
+.row h2{
+    font-weight: bold;
+    text-shadow: 0.05em 0.05em 0 rgb(219, 219, 219);
+    font-family: "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.row .img{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row-maps{
+    justify-content: center;
+}
+
+iframe{
+    margin: 5px;
+    width: 50%;
+    max-width: 300px;
+}
+
+.link-to-fb{
+    padding-top: 30px;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#fbImg{
+    border-radius: 50px;
+    border-style: double;
+}
+
+ /* footer */
+.footer{
+    background-color: rgb(245, 245, 232);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+
+}
+
+/* xs <576 sm >=576 md>=768*/
+
+@media (min-width:(576px)) and (max-width:(767px)) {
+    /* 768px 以下改排版*/
+}
+
+@media (max-width:(575px)) {
+    main #hiddenImg{
+        display: none;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,148 @@
+/* nav */
+#navbrand{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+#navbrand:hover{
+    transform: rotateZ(360deg);
+    transition: 1s;
+    text-shadow: 0.05em 0.05em 0 rgb(192, 191, 191);
+    color: rgb(247, 226, 198);
+}
+
+#nav-list li a:hover{
+    text-shadow: 0.1em 0.1em 0 gainsboro;
+}
+
+/*main*/
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60vh;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.side-menu {
+    margin-right: 20px;
+    width: 100px;
+    position: fixed;
+    left: 0.1%;
+    z-index: 2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.side-menu p{
+    padding-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(64, 64, 64);
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.side-menu-year li{
+    padding-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.side-menu-year li a{
+    color: black;
+    text-decoration: none;
+}
+
+.side-menu-year li a:hover{
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0 gainsboro;
+}
+
+.items{
+    background-color: antiquewhite;
+    margin-left: 150px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.items div{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.posters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.items div p:nth-child(2) {
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.items div p:nth-child(3){
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 10px;
+}
+
+.items div a{
+    text-align: none;
+    color: black;
+    text-decoration: none;
+}
+
+.items div a:hover{
+    text-shadow: 0.1em 0.1em 0 rgba(214, 211, 211, 0.945);
+}
+
+.item img:hover{
+    transform: scale(1.7);
+    z-index: 3;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(245, 245, 232);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+}
+
+@media(min-width: 992px) and (max-width: 1200px){
+    .side-menu{
+        left: 2%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    main{
+        margin-top: 130px;
+    }
+    #header-nav{
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .side-menu{
+        z-index: 0;
+    }
+
+    .items{
+        margin: auto;
+    }
+}

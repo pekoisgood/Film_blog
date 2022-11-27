@@ -1,0 +1,49 @@
+/* nav */
+#navbrand{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+#navbrand:hover{
+    transform: rotateZ(360deg);
+    transition: 1s;
+    text-shadow: 0.05em 0.05em 0 rgb(192, 191, 191);
+    color: antiquewhite;
+}
+
+#nav-list li a:hover{
+    text-shadow: 0.1em 0.1em 0 gainsboro;
+}
+
+/* main */
+#carouselExampleDark{
+    margin-top: 30px;
+    transition: 1.5s;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* footer */
+ .footer{
+    background-color: rgb(245, 245, 232);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
+}
+
+@media (max-width: 802px) {
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

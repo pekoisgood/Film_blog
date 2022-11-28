@@ -10,5 +10,5 @@ input.addEventListener("keypress", function onEvent(event){
 
 function sayHello(){
     let name = document.getElementById("inputName").value;
-    alert("Nice to meet you "+ name + " ! ٩(๑❛ᴗ❛๑)۶");
+    alert("Nice to meet you, "+ name + " ! ٩(๑❛ᴗ❛๑)۶");
 };

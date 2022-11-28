@@ -44,13 +44,14 @@
     color: rgb(64, 64, 64);
     font-size: 20px;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+
 }
 
 .side-menu-year li{
     padding-bottom: 5px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 .side-menu-year li a{
@@ -73,16 +74,19 @@
 .items div{
     padding-top: 20px;
     text-align: center;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .posters{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 .items div p:nth-child(2) {
     padding-top: 10px;
     margin-bottom: 0px;
+    font-size: 18px;
 }
 
 .items div p:nth-child(3){
@@ -90,21 +94,88 @@
     margin-top: 0px;
     height: 10px;
 }
+/* Film img */
+.myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-.items div a{
-    text-align: none;
-    color: black;
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* the model (background)*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+/* Modal Content (image) */
+.modal-content-container{
+    margin-top: 20px;
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    height: 150px;
+    font-size: 20px;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+/* Add Animation */
+.modal-content, #caption{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1);}
+    to {transform: scale(1);}
+}
+
+/* The Close Button */
+#myModal .close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color:rgb(233, 203, 165);
     text-decoration: none;
+    cursor: pointer;
 }
 
-.items div a:hover{
-    text-shadow: 0.1em 0.1em 0 rgba(214, 211, 211, 0.945);
+@media only srenen and (max-width: 700px) {
+    .modal-content{
+        width: 100%;
+    }
 }
 
-.item img:hover{
-    transform: scale(1.7);
-    z-index: 3;
-}
 
 /* footer */
 .footer{
@@ -144,5 +215,9 @@
 
     .items{
         margin: auto;
+    }
+    .item img:active{
+        z-index: 3;
+        transform: scale(1.6);
     }
 }

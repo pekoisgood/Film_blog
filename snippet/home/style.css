@@ -19,7 +19,7 @@
 }
 
 /* main */
-#carouselExampleDark{
+#carouselExampleIndicators{
     margin-top: 30px;
     transition: 1.5s;
     max-width: 1200px;
@@ -42,8 +42,9 @@
 
 @media (max-width: 802px) {
     .footer{
-        position: fixed;
-        bottom: 0;
+        position: relative;
+        bottom: 10;
         width: 100%;
+
     }
 }

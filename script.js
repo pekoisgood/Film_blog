@@ -1,25 +1,26 @@
-/*
-document.getElementById("navbar-toggler").addEventListener("blur", outFocus());
+var modal = document.getElementById("myModal");
 
-function outFocus(){
-    document.getElementById("navbarSupportedContent").collapse();
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function enlarge(img) {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
 };
 
-function showImage(imgName) {
-    document.getElementById('filmImg').src = imgName;
-    showLargeImagePanel();
-    unselectAll();
-}
-function showLargeImagePanel() {
-    document.getElementById('filmImgPanel').style.visibility = 'visible';
-}
-    
-function unselectAll() {
-    if(document.selection) document.selection.empty();
-    if(window.getSelection) window.getSelection().removeAllRanges();
-}
-    
-function hideMe(obj) {
-    obj.style.visibility = 'hidden';
-}
-*/
+var imageNodes = document.getElementsByClassName('myImg');
+for (var i=0; i < imageNodes.length; i++ ) {
+    imageNodes[i].addEventListener('click', function(){
+        enlarge(this);
+    });
+};
+
+//get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+//when the user clicks on <span> (x), close the modal
+span.onclick = function (){
+    modal.style.display = "none";
+};

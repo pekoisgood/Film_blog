@@ -14,6 +14,10 @@
     color: antiquewhite;
 }
 
+#nav-list li span{
+    vertical-align: middle;
+}
+
 #nav-list li a:hover{
     text-shadow: 0.1em 0.1em 0 gainsboro;
 }
@@ -41,10 +45,14 @@
 }
 
 @media (max-width: 802px) {
-    .footer{
-        position: relative;
-        bottom: 10;
-        width: 100%;
-
+    main{
+        margin-bottom: 100px;
     }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-top: 0;
+        z-index: 2;
+        }
 }

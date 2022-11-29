@@ -14,6 +14,10 @@
     color: antiquewhite;
 }
 
+#nav-list li span{
+    vertical-align: middle;
+}
+
 #nav-list li a:hover{
     text-shadow: 0.1em 0.1em 0 gainsboro;
 }
@@ -32,7 +36,6 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-
 
 main p, main li{
     font-family: 'Times New Roman', Times, serif;
@@ -68,6 +71,10 @@ main p, main li{
     text-align: center;
 }
 
+.row h2 span{
+    vertical-align: middle;
+}
+
 .row .img{
     text-align: center;
     padding-top: 20px;
@@ -91,6 +98,16 @@ iframe{
     font-family:  "cursive", serif, Verdana, "Geneva", Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
+}
+
+.link-to-fb a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.link-to-fb:hover {
+    text-shadow: 0.1em 0.1em 0 rgb(227, 227, 215);
 }
 
 #fbImg{

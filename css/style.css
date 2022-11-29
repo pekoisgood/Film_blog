@@ -14,9 +14,14 @@
     color: rgb(247, 226, 198);
 }
 
+#nav-list li span{
+    vertical-align: middle;
+}
+
 #nav-list li a:hover{
     text-shadow: 0.1em 0.1em 0 gainsboro;
 }
+
 
 /*main*/
 .container{
@@ -99,6 +104,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: 350px;
 }
 
 .myImg:hover {
@@ -208,16 +214,19 @@
         z-index: 100;
         width: 100%;
     }
-
+    #header-nav .container{
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
     .side-menu{
         z-index: 0;
+        display: none;
     }
 
     .items{
         margin: auto;
     }
-    .item img:active{
-        z-index: 3;
-        transform: scale(1.6);
+    .myImg{
+        width: 100%;
     }
 }
